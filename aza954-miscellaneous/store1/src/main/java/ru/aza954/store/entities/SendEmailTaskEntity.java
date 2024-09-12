@@ -1,4 +1,4 @@
-package ru.aza954.aza_mail_tracker.store.entities;
+package ru.aza954.store.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

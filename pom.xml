@@ -25,7 +25,9 @@
 		<module>aza954-client-api</module>
 
 		<module>aza954-worker1</module>
-		<module>aza954-others/store</module>
+
+
+		<module>aza954-miscellaneous/store1</module>
 	</modules>
     <scm>
 		<connection/>

@@ -1,12 +1,12 @@
-package ru.aza954.aza_mail_tracker.store.dao;
+package ru.aza954.store.dao;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import ru.aza954.aza_mail_tracker.store.entities.SendEmailTaskEntity;
-import ru.aza954.aza_mail_tracker.store.repositories.SendEmailTaskRepository;
+import ru.aza954.store.entities.SendEmailTaskEntity;
+import ru.aza954.store.repositories.SendEmailTaskRepository;
 
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
