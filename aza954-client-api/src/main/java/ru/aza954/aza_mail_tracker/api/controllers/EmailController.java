@@ -3,10 +3,11 @@ package ru.aza954.aza_mail_tracker.api.controllers;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import ru.aza954.aza_mail_tracker.service.EmailClientApi;
+
 
 import ru.aza954.store.dao.SendEmailTaskDao;
 import ru.aza954.store.entities.SendEmailTaskEntity;
+import ru.aza954.worker.service.EmailClientApi;
 
 @RestController
 @RequiredArgsConstructor

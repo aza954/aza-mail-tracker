@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.context.request.WebRequest;
-import ru.aza954.aza_mail_tracker.api.dto.ErrorDto;
+import ru.aza954.data.dto.ErrorDto;
 
 
 import java.util.Map;

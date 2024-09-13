@@ -1,4 +1,4 @@
-package ru.aza954.aza_mail_tracker.service;
+package ru.aza954.worker.service;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;

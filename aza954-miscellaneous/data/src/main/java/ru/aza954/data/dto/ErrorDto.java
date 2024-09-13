@@ -1,4 +1,4 @@
-package ru.aza954.aza_mail_tracker.api.dto;
+package ru.aza954.data.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
