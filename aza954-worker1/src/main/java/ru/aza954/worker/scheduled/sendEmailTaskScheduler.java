@@ -23,9 +23,9 @@ public class sendEmailTaskScheduler {
     @Scheduled(cron = "*/5 * * * * *")
     public void sendEmailTasks() {
         sendEmailTaskDao.findAllNotProcessed().forEach(sendEmailTask ->{
-            Boolean delivered = emailClientApi.sendEmail(sendEmailTask.getDestinationEmail(),sendEmailTask.getMessage());
+            boolean delivered = emailClientApi.sendEmail(sendEmailTask.getDestinationEmail(),sendEmailTask.getMessage());
             if (delivered){
-                log.debug("Сообщение успешно отправилось на почту " + sendEmailTask.getDestinationEmail());
+                log.info("Сообщение успешно отправилось на почту " + sendEmailTask.getDestinationEmail());
                 sendEmailTaskDao.markAsProcessed(sendEmailTask);
             }
             else {

@@ -1,10 +1,12 @@
 package ru.aza954.aza_mail_tracker.api.controllers;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 
+import ru.aza954.aza_mail_tracker.service.EmailService;
 import ru.aza954.store.dao.SendEmailTaskDao;
 import ru.aza954.store.entities.SendEmailTaskEntity;
 import ru.aza954.worker.service.EmailClientApi;
@@ -12,6 +14,8 @@ import ru.aza954.worker.service.EmailClientApi;
 @RestController
 @RequiredArgsConstructor
 public class EmailController {
+    @Autowired
+    EmailService emailService;
 
     public static final String SEND_EMAIL = "/api/email/send";
     private final SendEmailTaskDao sendEmailTaskDao;
@@ -27,5 +31,7 @@ public class EmailController {
                 .message(message)
                 .build());
         emailClientApi.sendEmail(destinationEmail,message);
+//        emailService.sendSimpleMessage(destinationEmail,message,message);
+
     }
 }
