@@ -25,6 +25,8 @@ public class SendEmailTaskEntity {
 
     Instant processedAt;
 
+    Instant lastedTryAt;
+
 
 
 
