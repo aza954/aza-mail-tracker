@@ -25,7 +25,8 @@ public class EmailClientApi {
         } catch (InterruptedException e) {
             return false;
         }
-        return random.nextInt(11)<5;
+        return true;
+//        return random.nextInt(11)<5;
 
 
 

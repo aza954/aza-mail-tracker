@@ -23,11 +23,7 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-        <dependency>
-            <groupId>ru.aza954</groupId>
-            <artifactId>aza954-worker1</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
         <dependency>
             <groupId>ru.aza954</groupId>
             <artifactId>data</artifactId>
